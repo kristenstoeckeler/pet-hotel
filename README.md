@@ -1,68 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pet Hotel
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+_Duration: 2  Days_
 
-### `npm start`
+Pet Hotel is a Pet Boarding Management App for a hypothetical pet hotel. The user can add pets to the database of pets, including the option to upload a pet photo. Once a pet is added, the user can check-in and check-out pets, as well as manage clients (pet mom & dads),
+adding new clients and deleting old ones. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+The following software is required to install Pet Hotel:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/en/)
+- [PostgreSQL](https://www.postgresql.org/download/)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. Create a database named `pet_hotel`
+2. The queries in the `database.sql` file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. I recommend using Postico to run those queries as that was used to create the queries.
+3. Open up your editor of choice and run an `npm install`
+4. If Postgres is not already running, start it by entering `brew services start postgresql` into the terminal
+5. Run `npm run server` in your terminal
+6. Run `npm run client` in your terminal
+7. The `npm run client` command will open up a new browser tab for you!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Anais is the owner of Bubbles & Beds Pet Hotel. B&B offers an overnight boarding service for pets.
+2. Anais used to keep track of her clients and their pets in an Xcel spreadsheet, but now she uses Pet Hotel.
+3. Anais has a new client Jane who would like to board her puppy Milo, so first Anais registers Jane as a Pet Owner.
+4. Next, Anais registers Milo as a Pet, including Milo's breed and description, and then uploads a photo of Milo for easy identification.
+5. On the day Jane drops Milo off for the first time for boarding, Milo is already in the system and so Jane clicks the Check-In button next to Milo's name so she knows that Milo is currently being cared for at the B&B Pet Hotel. When Milo's stay is over, Anais clicks Check-Out.
+6. Six months later, when Jane informs Anais that she is moving to a different town and will no longer be a client of Anais', she deletes Jane as an Pet Owner so as not to clog up her database.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Built With
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [PostgreSQL](https://www.postgresql.org/download/)
+- [Firebase](https://firebase.google.com/)
+- [Reactstrap](https://reactstrap.github.io/)
+  
 
-## Learn More
+## Acknowledgements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality and my cohort who built this web application alongside me.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+If you have suggestions or issues, please contact me through [LinkedIn](https://www.linkedin.com/in/kristenstoeckeler/).
